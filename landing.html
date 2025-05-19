@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Interactive Game Collection</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;600;900&display=swap" rel="stylesheet">
+    <meta name="author" content="chetan-lab7">
+    <meta name="last-updated" content="2025-05-18 17:19:27">
+</head>
+<body>
+    <div id="stars-container"></div>
+    <div id="planets-container">
+        <div class="planet planet-1"></div>
+        <div class="planet planet-2"></div>
+        <div class="planet planet-3"></div>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <i class="fas fa-gamepad logo-icon"></i>
+            <span class="logo-text">Game<span>Hub</span></span>
+        </div>
+        <nav>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#games" class="nav-link">Games</a>
+            <a href="#about" class="nav-link">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text" data-text="GameHub">GameHub</h1>
+                <h2>Ultimate Game Collection</h2>
+                <p>Experience a collection of fun and interactive games with stunning animations and immersive gameplay</p>
+                
+                <div class="cta-buttons">
+                    <a href="index.html" class="cta-btn primary">
+                        <span class="btn-content">
+                            <i class="fas fa-play"></i>
+                            Start Playing Now
+                        </span>
+                    </a>
+                    <a href="#features" class="cta-btn secondary">
+                        <span class="btn-content">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="game-preview">
+                    <div class="preview-screen">
+                        <div class="preview-carousel">
+                            <div class="carousel-slide active">
+                                <img src="images/rockpaper.png" alt="Rock Paper Scissors" class="preview-img">
+                                <div class="slide-caption">Rock Paper Scissors</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/guessnumber.png" alt="Number Guessing" class="preview-img">
+                                <div class="slide-caption">Number Guessing</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/dice.png" alt="Dice Roller" class="preview-img">
+                                <div class="slide-caption">Dice Roller</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/memory.png" alt="Memory Match" class="preview-img">
+                                <div class="slide-caption">Memory Match</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/space.png" alt="Space Shooter" class="preview-img">
+                                <div class="slide-caption">Space Shooter</div>
+                            </div>
+                        </div>
+                        <!-- Navigation dots -->
+                        <div class="carousel-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                            <span class="dot" data-slide="4"></span>
+                        </div>
+                    </div>
+                    <div class="controller left">
+                        <div class="controller-button"></div>
+                    </div>
+                    <div class="controller right">
+                        <div class="controller-button"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="features">
+            <h2 class="section-title">Amazing Features</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Multiple Games</h3>
+                    <p>Enjoy a variety of games from classics to puzzles and action-packed adventures</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Stunning Visuals</h3>
+                    <p>Experience beautiful animations and visual effects across all games</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Leaderboards</h3>
+                    <p>Compete with others and track your progress on global leaderboards</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Play on any device with a fully responsive and adaptive interface</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="games">
+            <h2 class="section-title">Our Games</h2>
+            <div class="games-container">
+                <div class="game-card">
+                    <div class="card-image rockpaper-img"></div>
+                    <div class="card-overlay">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>Challenge the computer in this classic game with animated hand movements</p>
+                        <span class="game-tag">Classic</span>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="card-image number-img"></div>
+                    <div class="card-overlay">
+                        <h3>Number Guessing</h3>
+                        <p>Test your intuition by guessing the correct number with helpful hints</p>
+                        <span class="game-tag">Puzzle</span>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="card-image dice-img"></div>
+                    <div class="card-overlay">
+                        <h3>Dice Roller</h3>
+                        <p>Roll virtual dice with realistic physics and stunning animations</p>
+                        <span class="game-tag">Casual</span>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="card-image memory-img"></div>
+                    <div class="card-overlay">
+                        <h3>Memory Match</h3>
+                        <p>Test your memory by matching pairs of cards with increasing difficulty</p>
+                        <span class="game-tag">Mind Game</span>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <div class="card-image shooter-img"></div>
+                    <div class="card-overlay">
+                        <h3>Space Shooter</h3>
+                        <p>Navigate through space, avoid asteroids and shoot enemies in this action game</p>
+                        <span class="game-tag">Action</span>
+                    </div>
+                </div>
+            </div>
+            <div class="games-cta">
+                <a href="index.html" class="cta-btn primary">
+                    <span class="btn-content">
+                        <i class="fas fa-play"></i>
+                        Play All Games
+                    </span>
+                </a>
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2 class="section-title">About GameHub</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>GameHub is a collection of interactive games designed to provide entertainment and challenge your skills. With stunning visuals, smooth animations, and intuitive controls, our games are crafted to deliver the best gaming experience.</p>
+                    <p>Whether you're looking for classic games like Rock Paper Scissors, mind games like Memory Match, or action-packed adventures like Space Shooter, GameHub has something for everyone.</p>
+                    <p>Our platform is constantly evolving with new games and features added regularly. Stay tuned for more exciting updates!</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Games</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Players</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Game Sessions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="floating-devices">
+                        <div class="device desktop">
+                            <div class="device-screen"></div>
+                        </div>
+                        <div class="device tablet">
+                            <div class="device-screen"></div>
+                        </div>
+                        <div class="device mobile">
+                            <div class="device-screen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-gamepad logo-icon"></i>
+                <span class="logo-text">Game<span>Hub</span></span>
+                <p>Play. Compete. Enjoy.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Navigation</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#games">Games</a>
+                    <a href="#about">About</a>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Games</h4>
+                    <a href="index.html">Rock Paper Scissors</a>
+                    <a href="index.html">Number Guessing</a>
+                    <a href="index.html">Dice Roller</a>
+                    <a href="index.html">Memory Match</a>
+                    <a href="index.html">Space Shooter</a>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Connect</h4>
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 GameHub | Created by <span class="username">chetan</span> | Last Updated: <span class="update-date">2025-05-18 17:19:27</span></p>
+        </div>
+    </footer>
+    <div class="floating-action">
+        <a href="index.html" class="fab-button">
+            <i class="fas fa-play"></i>
+        </a>
+        <span class="fab-tooltip">Start Playing</span>
+    </div>
+    
+    <script src="landing.js"></script>
+</body>
+</html>
