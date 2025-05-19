@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     document.querySelectorAll('.game-card').forEach(card => {
         card.addEventListener('click', () => {
-            window.location.href = 'index.html';
+            window.location.href = 'game.html';
         });
     });
 });
